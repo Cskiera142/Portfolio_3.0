@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+
 import "./Navigation.css";
 
-function Navigation() {
+function Navigation({ setModule }) {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -33,24 +33,24 @@ function Navigation() {
       </p>
       <ul id="nav-list">
         <li>
-          <Link className="link" to="/">
+          <button className="button" onClick={() => setModule("home")}>
             Home
-          </Link>
+          </button>
         </li>
         <li>
-          <Link className="link" to="/projects">
+          <button className="button" onClick={() => setModule("projects")}>
             Projects
-          </Link>
+          </button>
         </li>
         <li>
-          <Link className="link" to="/contact">
+          <button className="button" onClick={() => setModule("contact")}>
             Contact
-          </Link>
+          </button>
         </li>
         <li>
-          <Link className="link" to="/about">
+          <button className="button" onClick={() => setModule("about")}>
             About
-          </Link>
+          </button>
         </li>
       </ul>
     </div>

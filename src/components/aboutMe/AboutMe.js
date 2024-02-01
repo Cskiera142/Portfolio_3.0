@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./AboutMe.css";
 
 function AboutMe() {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    // Add a delay to ensure the transition takes effect
+    const timeoutId = setTimeout(() => {
+      setLoaded(true);
+    }, 100);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   return (
-    <div id="about-me-container">
+    <div
+      id="about-me-container"
+      className={`initial ${loaded ? "loaded" : ""}`}
+    >
       <h4>
-        Grew up outside of Champaign, IL. Father of two, I now call Colorado my
-        home. I believe form and function are the building blocks of web
-        development and design and strive everyday to hone and craft my skills.
-        I am pursuing a creative outlet in web design.
+        Having spent my formative years outside of Champaign, IL, I now proudly
+        call Colorado my home. I love the pursuit of form and function. My
+        journey is guided by a pursuit of a creative outlet, with a focus on the
+        dynamic realm of web design.
       </h4>
     </div>
   );

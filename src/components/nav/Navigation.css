@@ -11,6 +11,9 @@
   border-radius: 15px;
   overflow: hidden;
   transition: transform 0.8s ease-in-out;
+  padding-left: 2rem;
+  width: 40rem;
+  z-index: 1;
 }
 
 #nav-card.initial {
@@ -33,14 +36,16 @@ li {
   padding-bottom: 0.5rem;
 }
 
-.link:hover {
+.button:hover {
   cursor: pointer;
   padding-bottom: 1rem;
   transition: padding-bottom 0.5s, opacity 0.5s ease-out;
   color: #d9bd5f;
 }
 
-.link {
+.button {
   text-decoration: none;
   color: #fff;
+  background-color: transparent;
+  border: none;
 }

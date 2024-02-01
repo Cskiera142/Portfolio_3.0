@@ -1,17 +1,17 @@
-#about-me-container {
+#contact-container {
   transition: transform 0.8s ease-in-out;
   overflow: hidden;
 }
 
-#about-me-container.initial {
+#contact-container.initial {
   transform: translateX(200%);
 }
 
-#about-me-container.loaded {
+#contact-container.loaded {
   transform: translateX(0);
 }
 
-#about-me-container h4 {
+#contact-container h4 {
   display: flex;
   width: 10rem;
 }

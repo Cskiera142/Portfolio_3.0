@@ -9,6 +9,7 @@
   background-color: black;
   border-radius: 50%;
   opacity: 30%;
+  z-index: 0;
 }
 
 @keyframes rotateBlob {
@@ -23,6 +24,7 @@
 .one {
   left: -15%;
   top: -15%;
+
   transform-origin: center;
   height: 70rem;
   width: 70rem;
