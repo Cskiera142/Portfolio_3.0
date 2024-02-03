@@ -1,7 +1,8 @@
-.blob-container {
+/* .blob-container {
   position: relative;
   width: 100vw;
   height: 100vh;
+  z-index: -1;
 }
 
 .blob {
@@ -9,7 +10,6 @@
   background-color: black;
   border-radius: 50%;
   opacity: 30%;
-  z-index: 0;
 }
 
 @keyframes rotateBlob {
@@ -72,4 +72,4 @@
 
 .four {
   border-radius: 61% 39% 78% 22% / 35% 61% 39% 65%;
-}
+} */

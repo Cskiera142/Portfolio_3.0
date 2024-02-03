@@ -1,6 +1,12 @@
 #contact-container {
   transition: transform 0.8s ease-in-out;
-  overflow: hidden;
+  overflow-y: auto;
+  padding-top: 3rem;
+  z-index: 1;
+  perspective: 1000px;
+  height: 650px;
+  font-family: "Anton";
+  padding-right: 5rem;
 }
 
 #contact-container.initial {
@@ -11,7 +17,73 @@
   transform: translateX(0);
 }
 
-#contact-container h4 {
+form {
   display: flex;
-  width: 10rem;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 500px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+  transform-origin: center center;
+  transform: rotateY(-15deg);
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid #fff;
 }
+
+form:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: rotateY(0deg);
+  background-color: rgb(10, 31, 68);
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  max-height: 100px;
+  min-height: 100px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+
+  &:focus {
+    border: 2px solid rgba(0, 206, 158, 1);
+  }
+}
+
+label {
+  margin-top: 1rem;
+}
+
+input {
+  width: 200px;
+  height: 35px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+
+  &:focus {
+    border: 2px solid rgba(0, 206, 158, 1);
+  }
+}
+
+input[type="submit"] {
+  margin-top: 2rem;
+  cursor: pointer;
+  background: #d9bd5f;
+  color: white;
+  border: none;
+}
+
+/* padding-left: 20px;
+padding-top: 20px;
+transition: transform 0.8s ease-in-out;
+overflow: hidden;
+width: 600px;
+height: 500px;
+border-radius: 15px; */

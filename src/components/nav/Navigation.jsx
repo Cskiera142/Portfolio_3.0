@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import "./Navigation.css";
 
 function Navigation({ setModule }) {
@@ -21,15 +20,14 @@ function Navigation({ setModule }) {
 
   return (
     <div id="nav-card" className={`initial ${loaded ? "loaded" : ""}`}>
+      <p></p>
       <h1 id="name">
-        Hi, my name is{" "}
-        <strong style={boldAndColorStyle}>
-          <span className="custom-font">C</span>olton
-        </strong>
+        Hi, I'm <strong style={boldAndColorStyle}>Colton</strong>
       </h1>
       <p id="title">
         I'm a <strong style={boldAndColorStyle}>Developer</strong> and{" "}
-        <strong style={boldAndColorStyle}>Designer</strong> working with MERN.
+        <strong style={boldAndColorStyle}>Designer</strong> providing elegant
+        solutions for your development needs.
       </p>
       <ul id="nav-list">
         <li>

@@ -11,9 +11,11 @@
   border-radius: 15px;
   overflow: hidden;
   transition: transform 0.8s ease-in-out;
-  padding-left: 2rem;
+  padding: 0 2rem;
   width: 40rem;
   z-index: 1;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
 }
 
 #nav-card.initial {
@@ -24,16 +26,22 @@
   transform: translateX(0);
 }
 
+#name {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
 #title {
   font-size: 26px;
 }
 
 ul {
+  display: flex;
   list-style: none;
 }
 
 li {
-  padding-bottom: 0.5rem;
+  padding: 0 2rem 0 0;
 }
 
 .button:hover {
