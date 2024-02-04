@@ -14,13 +14,15 @@ function Contact() {
     emailjs
       .sendForm(
         "service_ryq01gl",
-        "template_lqle5xs",
+        "template_op7om78",
         form.current,
         "efTXj_P_32viyLwrb"
       )
       .then(
         (result) => {
           console.log(result.text);
+          //Clear form
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
@@ -48,7 +50,11 @@ function Contact() {
         <textarea name="message" />
         <input type="submit" value="Send" />
       </form>
-      <SocialIcon url="https://github.com/Cskiera142" target="_blank" />
+      <SocialIcon
+        style={{ margin: "0 2rem" }}
+        url="https://github.com/Cskiera142"
+        target="_blank"
+      />
       <SocialIcon
         url="https://www.linkedin.com/in/coltonskiera/"
         target="_blank"
