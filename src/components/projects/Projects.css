@@ -5,13 +5,13 @@
   overflow-y: auto;
   padding: 3rem 2rem 0 0rem;
   z-index: 1;
-  perspective: 1000px;
-  height: 650px;
+  height: 1000px;
+  padding-top: 20rem;
   font-family: "Anton";
 }
 
 #project-container.initial {
-  transform: translateX(200%);
+  transform: translateX(100%);
 }
 
 #project-container.loaded {

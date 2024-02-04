@@ -19,7 +19,7 @@ function App() {
         </div>
 
         <div id="right">
-          <div> {module === "projects" && <Projects />}</div>
+          <div id="project-div"> {module === "projects" && <Projects />}</div>
           <div> {module === "contact" && <Contact />}</div>
           <div> {module === "about" && <AboutMe />}</div>
         </div>

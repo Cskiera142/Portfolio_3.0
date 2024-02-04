@@ -62,3 +62,8 @@ body {
   justify-content: end;
   margin-right: 2rem;
 }
+
+#project-div {
+  position: absolute;
+  top: -20%;
+}
