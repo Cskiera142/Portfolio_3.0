@@ -4,8 +4,7 @@ import AboutMe from "./components/aboutMe/AboutMe";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import "./index.css";
-import ParticlesBackground from "./components/particles/ParticlesBackground";
-import ParticleTest from "./components/ParticleTest";
+import ParticleBackground from "./components/ParticleBackground";
 
 function App() {
   const [module, setModule] = useState([]);
@@ -13,7 +12,7 @@ function App() {
 
   return (
     <div id="App">
-      <ParticleTest />
+      <ParticleBackground />
       <div id="home-container">
         <div id="left">
           <Navigation setModule={setModule} />

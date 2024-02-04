@@ -17,30 +17,31 @@ function Projects() {
   return (
     <div id="project-container" className={`initial ${loaded ? "loaded" : ""}`}>
       <div id="project">
-        <div className="img-tilt">
+        <a className="img-tilt" href="https://levelup-games.netlify.app/">
+          {" "}
           <img
             className="img"
             src={images.levelupgaming}
             alt="Level Up gaming"
           />
           <p>Fullstack Capstone</p>
-        </div>
-        <div className="img-tilt">
+        </a>
+        <a className="img-tilt" href="https://omnifood-colton.netlify.app/">
           <img className="img" src={images.omnifood} alt="Omnifood" />
           <p>Omnifood</p>
-        </div>
-        <div className="img-tilt">
+        </a>
+        <a className="img-tilt" href="https://maptygeotracker.netlify.app/">
           <img className="img" src={images.mapty} alt="Mapty" />
           <p>Mapty Run Tracker</p>
-        </div>
-        <div className="img-tilt">
+        </a>
+        <a className="img-tilt" href="https://piggame5ceb06.netlify.app/">
           <img className="img" src={images.piggame} alt="Pig Game" />
           <p>Pig Game.</p>
-        </div>
-        <div className="img-tilt">
+        </a>
+        <a className="img-tilt" href="https://simple-tasks-mngr.netlify.app/">
           <img className="img" src={images.todolist} alt="ToDo List" />
           <p>Task Tracker</p>
-        </div>
+        </a>
       </div>
     </div>
   );

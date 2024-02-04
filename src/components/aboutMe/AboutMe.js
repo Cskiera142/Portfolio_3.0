@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./AboutMe.css";
+import * as images from "../../assets/images/Images";
 
 function AboutMe() {
   const [loaded, setLoaded] = useState(false);
@@ -18,6 +19,8 @@ function AboutMe() {
       id="about-me-container"
       className={`initial ${loaded ? "loaded" : ""}`}
     >
+      <img className="img" src={images.profilepic} alt="Omnifood" />
+
       <h4>
         Having spent my formative years outside of Champaign, IL, I now proudly
         call Colorado my home. I love the pursuit of form and function. My

@@ -5,7 +5,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`,
 
-function ParticleTest() {
+function ParticleBackground() {
   const [init, setInit] = useState(false);
 
   // this should be run only once per application lifetime
@@ -31,7 +31,7 @@ function ParticleTest() {
     () => ({
       background: {
         color: {
-          value: "#0d47a1",
+          value: "#081f41",
         },
       },
       fpsLimit: 120,
@@ -51,8 +51,8 @@ function ParticleTest() {
             quantity: 4,
           },
           repulse: {
-            distance: 200,
-            duration: 0.4,
+            distance: 100,
+            duration: 0.8,
           },
         },
       },
@@ -74,7 +74,7 @@ function ParticleTest() {
             default: "bounce",
           },
           random: false,
-          speed: 6,
+          speed: 3,
           straight: false,
         },
         number: {
@@ -111,4 +111,4 @@ function ParticleTest() {
   return <></>;
 }
 
-export default ParticleTest;
+export default ParticleBackground;

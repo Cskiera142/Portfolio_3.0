@@ -31,11 +31,6 @@ function Navigation({ setModule }) {
       </p>
       <ul id="nav-list">
         <li>
-          <button className="button" onClick={() => setModule("home")}>
-            Home
-          </button>
-        </li>
-        <li>
           <button className="button" onClick={() => setModule("projects")}>
             Projects
           </button>

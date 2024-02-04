@@ -32,9 +32,6 @@
   transition: transform 0.8s ease-in-out;
 }
 
-.img-tilt img {
-}
-
 .img-tilt {
   display: flex;
   flex-direction: row-reverse;
@@ -50,7 +47,7 @@
 
 .img-tilt p {
   width: 20rem;
-  font-size: 70px;
+  font-size: 60px;
   -webkit-text-stroke-width: 1px;
   color: transparent;
   -webkit-text-stroke-color: #fff;
@@ -63,7 +60,7 @@
 
 .img {
   width: auto;
-  height: 15rem;
+  height: 10rem;
   margin-bottom: 2rem;
   z-index: 1;
   border-radius: 15px;
@@ -91,11 +88,6 @@ img:hover ~ p {
   width: 0; /* Set the width to 0 to hide the scrollbar */
 }
 
-/* 
-#project-container::-webkit-scrollbar-track {
-  background-color: transparent;
+#project a {
+  text-decoration: none;
 }
-
-#project-container::-webkit-scrollbar-thumb {
-  background-color: transparent;
-} */
