@@ -19,13 +19,15 @@ function AboutMe() {
       id="about-me-container"
       className={`initial ${loaded ? "loaded" : ""}`}
     >
-      <img className="img" src={images.profilepic} alt="Omnifood" />
+      <img src={images.profilepic} alt="Omnifood" />
 
       <h4>
-        Having spent my formative years outside of Champaign, IL, I now proudly
-        call Colorado my home. I love the pursuit of form and function. My
-        journey is guided by a pursuit of a creative outlet, with a focus on the
-        dynamic realm of web design.
+        Hi, I'm Colton! I have a passion for developing and designing websites.
+        I transitioned from the high pressure job of climbing and pruning 70ft
+        trees, and have moved that energy and enthusiasm into my coding career.
+        Currently living in Colorado, if you can't find me working on a tricky
+        bit of code, I'm likely out enjoying of the 300 sunny days this
+        beautiful state has to offer with my beautiful family.
       </h4>
     </div>
   );

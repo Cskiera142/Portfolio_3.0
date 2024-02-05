@@ -1,6 +1,8 @@
 #about-me-container {
   transition: transform 0.8s ease-in-out;
   overflow: hidden;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 #about-me-container.initial {
@@ -9,6 +11,12 @@
 
 #about-me-container.loaded {
   transform: translateX(0);
+}
+
+#about-me-container img {
+  width: 25rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 #about-me-container h4 {

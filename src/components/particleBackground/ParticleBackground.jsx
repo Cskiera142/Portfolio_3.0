@@ -31,7 +31,7 @@ function ParticleBackground() {
     () => ({
       background: {
         color: {
-          value: "#081f41",
+          value: "#222",
         },
       },
       fpsLimit: 120,
@@ -61,7 +61,7 @@ function ParticleBackground() {
           value: "#ffffff",
         },
         links: {
-          color: "#ffffff",
+          color: "#513752",
           distance: 150,
           enable: true,
           opacity: 0.5,

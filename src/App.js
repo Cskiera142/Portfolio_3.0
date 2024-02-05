@@ -4,7 +4,7 @@ import AboutMe from "./components/aboutMe/AboutMe";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import "./index.css";
-import ParticleBackground from "./components/ParticleBackground";
+import ParticleBackground from "./components/particleBackground/ParticleBackground";
 
 function App() {
   const [module, setModule] = useState([]);
