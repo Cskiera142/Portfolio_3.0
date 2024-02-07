@@ -37,14 +37,16 @@ function Navigation({ setModule }) {
           </button>
         </li>
       </ul>
-      <h1 id="name">
-        Hi, I'm <strong style={boldAndColorStyle}>Colton</strong>
-      </h1>
-      <p id="title">
-        I'm a <strong style={boldAndColorStyle}>Developer</strong> and{" "}
-        <strong style={boldAndColorStyle}>Designer</strong> providing elegant
-        solutions for your development needs.
-      </p>
+      <div id="name-card">
+        <h1 id="name">
+          Hi, I'm <strong style={boldAndColorStyle}>Colton</strong>
+        </h1>
+        <p id="title">
+          I'm a <strong style={boldAndColorStyle}>Developer</strong> and{" "}
+          <strong style={boldAndColorStyle}>Designer</strong> providing elegant
+          solutions for your development needs.
+        </p>
+      </div>
     </div>
   );
 }
