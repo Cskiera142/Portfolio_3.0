@@ -17,7 +17,7 @@ function Projects() {
   return (
     <div id="project-container" className={`initial ${loaded ? "loaded" : ""}`}>
       <div id="project">
-        <a className="img-tilt" href="https://levelup-games.netlify.app/">
+        <a className="img-card" href="https://levelup-games.netlify.app/">
           {" "}
           <img
             className="img"
@@ -26,19 +26,19 @@ function Projects() {
           />
           <p>Fullstack Capstone</p>
         </a>
-        <a className="img-tilt" href="https://omnifood-colton.netlify.app/">
+        <a className="img-card" href="https://omnifood-colton.netlify.app/">
           <img className="img" src={images.omnifood} alt="Omnifood" />
           <p>Omnifood</p>
         </a>
-        <a className="img-tilt" href="https://maptygeotracker.netlify.app/">
+        <a className="img-card" href="https://maptygeotracker.netlify.app/">
           <img className="img" src={images.mapty} alt="Mapty" />
           <p>Mapty Run Tracker</p>
         </a>
-        <a className="img-tilt" href="https://piggame5ceb06.netlify.app/">
+        <a className="img-card" href="https://piggame5ceb06.netlify.app/">
           <img className="img" src={images.piggame} alt="Pig Game" />
           <p>Pig Game.</p>
         </a>
-        <a className="img-tilt" href="https://simple-tasks-mngr.netlify.app/">
+        <a className="img-card" href="https://simple-tasks-mngr.netlify.app/">
           <img className="img" src={images.todolist} alt="ToDo List" />
           <p>Task Tracker</p>
         </a>

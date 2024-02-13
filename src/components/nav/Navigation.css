@@ -62,9 +62,16 @@ li {
 @media screen and (max-width: 1300px) {
   #nav-card {
     flex-direction: column-reverse;
+    display: flex;
   }
 
   #name-card {
     margin: 2rem 0;
+  }
+}
+
+@media (max-width: 700px) {
+  #nav-card {
+    display: none; /* hide below 700px */
   }
 }

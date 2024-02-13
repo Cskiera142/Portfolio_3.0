@@ -29,20 +29,18 @@
   transition: transform 0.8s ease-in-out;
 }
 
-.img-tilt {
+.img-card {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  transform: rotateY(-15deg);
 }
 
-.img-tilt:hover {
+.img-card:hover {
   transition: transform 0.5s ease-in-out;
-  transform: rotateY(0);
   opacity: 85%;
 }
 
-.img-tilt p {
+.img-card p {
   width: 20rem;
   font-size: 60px;
   -webkit-text-stroke-width: 1px;
@@ -51,7 +49,7 @@
   transition: -webkit-text-stroke-color 0.5s ease-in-out;
 }
 
-.img-tilt p:hover {
+.img-card p:hover {
   color: #fff;
 }
 
@@ -109,25 +107,22 @@ img:hover ~ p {
 
   #project {
     display: flex;
-    flex-direction: column;
     z-index: 1;
     transition: transform 0.8s ease-in-out;
   }
 
-  .img-tilt {
+  .img-card {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    transform: rotateY(-15deg);
   }
 
-  .img-tilt:hover {
+  .img-card:hover {
     transition: transform 0.5s ease-in-out;
-    transform: rotateY(0);
     opacity: 85%;
   }
 
-  .img-tilt p {
+  .img-card p {
     width: 20rem;
     font-size: 60px;
     -webkit-text-stroke-width: 1px;
@@ -136,7 +131,7 @@ img:hover ~ p {
     transition: -webkit-text-stroke-color 0.5s ease-in-out;
   }
 
-  .img-tilt p:hover {
+  .img-card p:hover {
     color: #fff;
   }
 
@@ -168,14 +163,43 @@ img:hover ~ p {
 
   @media screen and (max-width: 1300px) {
     #project-container {
-      overflow: scroll;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    #project-container.initial {
+      transform: translateX(150%);
+    }
+
+    #project-container.loaded {
+      transform: translateX(0);
     }
 
     #project {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       overflow: hidden;
-      flex-direction: row;
     }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #project-container {
+    overflow: visible;
+  }
+  #project {
+    flex-direction: column;
+  }
+
+  .img-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    z-index: 1;
+    border-radius: 15px;
+  }
+
+  .img-card p {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
   }
 }

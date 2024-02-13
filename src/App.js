@@ -3,6 +3,7 @@ import Navigation from "./components/nav/Navigation";
 import AboutMe from "./components/aboutMe/AboutMe";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
+import NavMobile from "./components/dropDown/NavMobile";
 import "./index.css";
 import ParticleBackground from "./components/particleBackground/ParticleBackground";
 
@@ -16,6 +17,7 @@ function App() {
       <div id="home-container">
         <div id="left">
           <Navigation setModule={setModule} />
+          <NavMobile setModule={setModule} />
         </div>
 
         <div id="right">

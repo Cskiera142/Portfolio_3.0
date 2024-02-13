@@ -86,3 +86,16 @@ body {
     position: static;
   }
 }
+
+@media screen and (max-width: 700px) {
+  body {
+    display: flex;
+    justify-content: left;
+  }
+
+  #left {
+    display: flex;
+    flex: 0;
+    flex-direction: row;
+  }
+}
